@@ -30,7 +30,7 @@ def summarize(document):
                 else:
                     sentence_scores[sent] += word_frequencies[word]
     # return a summary of the document using the top scoring sentences
-    summary_sentences = nltk.sent_tokenize(document)[:3]
+    summary_sentences = nltk.sent_tokenize(document)[:5]
     return ' '.join(summary_sentences)
 
 st.title('Text Summarization')
