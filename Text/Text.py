@@ -72,6 +72,7 @@ tf_matrix = _create_tf_matrix(freq_matrix)
     
 def _create_documents_per_words(freq_matrix):
     word_per_doc_table = {}
+#ica's code
 
     for sent, f_table in freq_matrix.items():
         for word, count in f_table.items():
